@@ -1,0 +1,42 @@
+config_ver: 0.1
+
+app:
+  debug: 
+    repo: true
+
+
+locker:
+  type: redis
+  host: 192.168.1.5
+  port: 6379
+
+message_bus:
+  type: active_mq
+  host: 127.0.0.1
+  port: 61614
+  user: test
+  pass: TestTestTestTest
+  topic: /topic/service-nano-service
+
+repo:
+  reader:
+    host: localhost
+    port: 3306
+    user: root
+    pass: 123698741
+  writer:
+    host: localhost
+    port: 3306
+    user: root
+    pass: 123698741
+  clientname: 123456
+  mastername: miranda
+
+telegram:
+  main:
+    token: TOKENBOT
+    chat: -45982643542
+  tech:
+    token: TOKENBOT
+    chat: -47173012951
+    
